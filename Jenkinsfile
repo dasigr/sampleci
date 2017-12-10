@@ -1,10 +1,9 @@
 pipeline {
-  agent any 
-
+  agent any
   stages {
-    stage('Build') { 
-      steps { 
-        sh './vendor/bin/phpunit --version'
+    stage('Build') {
+      steps {
+        sh 'python --version'
       }
     }
   }
