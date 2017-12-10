@@ -4,6 +4,9 @@ pipeline {
     stage('Build') {
       steps {
         sh 'php --version'
+        sh '''
+          echo "Hello World"
+        '''
       }
     }
   }
